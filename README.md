@@ -1,11 +1,14 @@
-## Welcome to SharkPools Extension Collection
-This Repository is home to all Turbowarp/PenguinMod Extensions made/contributed to by **SharkPool**, a few were soley made by others.
-Please dont take any files from this gallery to put in someone elses gallery without prior permission from the creator.
+## Welcome to Foxonwow's Extension Gallery!
 
-## Contributing
-See [How to Add YOUR Extensions](https://github.com/SharkPool-SP/SharkPools-Extensions/blob/main/How%20to%20Add%20YOUR%20Extensions.md).
+Hello! I'm **Foxonwow**, but you may know me from GitHub as *Pfoxj* or *CTRLCMDmaster*, but, on Scratch, I go by Foxonwow.
 
-## License
-Most extensions in this repository specify their license in the first few lines of commented code.
+I've decided to create my **own extension gallery**, based on SharkPool's!
 
-If an extension does **not** explicitly state a license, it is considered **dual-licensed under the MIT License and the GNU LGPL-3.0 License**, and you may choose either license.
+This gallery features **all of my extensions**, including ones that were originally rejected by PenguinMod, but this isn’t just retaliation!
+
+My mission is to show the world that extensions like mine can actually ***WORK***, to help me, and other creators reach success around the various other Extension Galleries.
+
+Because, yeah, I know from experience that Penguinmod's moderation for extensions can be ***HARSH*** sometimes, especially for new creators.
+So, maybe this gallery will be seen by the Penguinmod team. Maybe, they'll double-check just a *bit* more.
+
+Because, I'm really just trying to help **support and grow the community** of custom extension creators and users alike!
