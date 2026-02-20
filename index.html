@@ -1,75 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Foxonwow's Extension Gallery</title>
-    <meta charset="utf-8">
+<head>
+  <title>Foxonwow's Extension Gallery</title>
+  <meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta content="Foxonwow's Extension Gallery" property="og:title">
-    <meta content="Foxonwow's own gallery of his Scratch extensions!" property="og:description">
-    <meta content="https://raw.githubusercontent.com/ctrlcmdmaster/Foxonwows-Extensions/refs/heads/main/pages/main-assets/foxonwow.png" property="og:image">
-    <meta content="#00a6ff" data-react-helmet="true" name="theme-color">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta content="Foxonwow's Extension Gallery" property="og:title">
+  <meta content="Foxonwow's own gallery of his Scratch extensions!" property="og:description">
+  <meta content="https://raw.githubusercontent.com/ctrlcmdmaster/Foxonwows-Extensions/refs/heads/main/pages/main-assets/foxonwow.png" property="og:image">
+  <meta content="#00a6ff" data-react-helmet="true" name="theme-color">
 
-    <script type="module">
-      // Import the Terser Library for Code Compression
-      import("https://cdn.jsdelivr.net/npm/terser@5.30.0/+esm").then(module => {
-        window.Terser = module;
-      });
-    </script>
+  <!-- Terser -->
+  <script type="module">
+    import("https://cdn.jsdelivr.net/npm/terser@5.30.0/+esm").then(module => {
+      window.Terser = module;
+    });
+  </script>
 
-    <link rel="icon" href="pages/main-assets/foxonwow.png">
-    <link href="pages/css/main.css" rel="stylesheet">
-    <link href="pages/css/custom-scroller.css" rel="stylesheet">
+  <link rel="icon" href="pages/main-assets/foxonwow.png">
+  <link href="pages/css/main.css" rel="stylesheet">
+  <link href="pages/css/custom-scroller.css" rel="stylesheet">
 
-    <!-- Lilita One Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&amp;display=swap" rel="stylesheet">
-  </head>
-  <body style="background-color: #111111">
-    <div class="navBar">
-      <img class="toHost" draggable="false" src="pages/main-assets/logo-TW.svg" onclick="window.open('https://turbowarp.org')">
-      <div class="navHeader">
-        <span class="title">Foxonwow's Extension Gallery</span>
-        <span class="header">Foxonwow's own gallery of his Scratch extensions!
-          <br><span style="color: pink">Please load extensions unsandboxed, otherwise they will most likely not load.</span>
+  <!-- Lilita One Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: #111111">
+
+  <div class="navBar">
+    <img class="toHost" draggable="false"
+         src="pages/main-assets/logo-TW.svg"
+         onclick="window.open('https://turbowarp.org')">
+
+    <div class="navHeader">
+      <span class="title">Foxonwow's Extension Gallery</span>
+      <span class="header">
+        Foxonwow's own gallery of his Scratch extensions!
+        <br>
+        <span style="color: pink">
+          Please load extensions unsandboxed, otherwise they will most likely not load.
         </span>
-      </div>
-      <img class="toSP" draggable="false" src="pages/main-assets/foxonwow.png" onclick="window.open('https://scratch.mit.edu/users/foxonwow/')">
+      </span>
     </div>
-    <div class="innerNav">
-      <img class="navImg" id="settings" draggable="false" src="pages/main-assets/settings.svg">
-      <div class="tagBar"></div>
-      <img class="navImg" id="contributors" draggable="false" src="pages/main-assets/contributors.svg">
-    </div>
-    <div class="innerNav">
-      <img class="navImgBig" draggable="false" id="refreshTags" src="pages/main-assets/refresh.svg">
-    </div>
-    <div class="filters" style="display: none">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <filter id="bloom-filter">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="5"></feGaussianBlur>
-          <feComposite in2="SourceGraphic" operator="arithmetic" k2=".3" k3="1" color-interpolation-filters="sRGB"></feComposite>
-        </filter>
-      </svg>
-    </div>
-    <script src="pages/components/tag.js" type="module"></script>
-    <script src="pages/components/extension.js" type="module"></script>
-    <script src="pages/components/panel-modal.js" type="module"></script>
-    <script src="pages/scripts/extension-generator.js"></script>
-    <script src="pages/scripts/contributor-generator.js"></script>
-    <script src="pages/scripts/mobile-scaler.js"></script>
-    <script src="pages/scripts/auto-extension-labeler.js" type="module"></script>
-    <script src="pages/gallery-startup.js"></script>
-  </body>
+
+    <img class="toSP" draggable="false"
+         src="pages/main-assets/foxonwow.png"
+         onclick="window.open('https://scratch.mit.edu/users/foxonwow/')">
+  </div>
+
+  <div class="innerNav">
+    <img class="navImg" id="settings" draggable="false"
+         src="pages/main-assets/settings.svg">
+    <div class="tagBar"></div>
+    <img class="navImg" id="contributors" draggable="false"
+         src="pages/main-assets/contributors.svg">
+  </div>
+
+  <div class="innerNav">
+    <img class="navImgBig" id="refreshTags" draggable="false"
+         src="pages/main-assets/refresh.svg">
+  </div>
+
+  <div class="filters" style="display: none">
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <filter id="bloom-filter">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="5"></feGaussianBlur>
+        <feComposite in2="SourceGraphic"
+                     operator="arithmetic"
+                     k2=".3"
+                     k3="1"
+                     color-interpolation-filters="sRGB">
+        </feComposite>
+      </filter>
+    </svg>
+  </div>
+
+  <!-- Components -->
+  <script src="pages/components/tag.js" type="module"></script>
+  <script src="pages/components/extension.js" type="module"></script>
+  <script src="pages/components/panel-modal.js" type="module"></script>
+
+  <!-- Scripts -->
+  <script src="pages/scripts/extension-generator.js"></script>
+  <script src="pages/scripts/contributor-generator.js"></script>
+  <script src="pages/scripts/mobile-scaler.js"></script>
+  <script src="pages/scripts/auto-extension-labeler.js" type="module"></script>
+  <script src="pages/gallery-startup.js"></script>
+
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
