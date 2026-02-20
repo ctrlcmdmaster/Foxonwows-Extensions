@@ -42,12 +42,6 @@ function updateStorage() {
 
 /* Function to make GUI Interactible */
 function initGUI() {
-  /* Donate Button */
-  const donateBtn = document.querySelector(`button[class="donateBtn"]`);
-  donateBtn.addEventListener("click", (e) => {
-    window.open("https://www.paypal.com/donate/?business=AGLGGVQWUBUFE&no_recurring=0&item_name=Help+pay+for+my+College+Education&currency_code=CAD", "_blank");
-    e.stopImmediatePropagation();
-  });
 
   /* Settings Button */
   const settingsBtn = document.querySelector(`img[class="navImg"][id="settings"]`);
@@ -84,11 +78,12 @@ function initGUI() {
 
   /* GitHub Button */
   const gitRepoBtn = document.querySelector(`img[class="navImgBig"][id="gitRepo"]`);
+if (gitRepoBtn) {
   gitRepoBtn.addEventListener("click", (e) => {
-    window.open("https://github.com/SharkPool-SP/SharkPools-Extensions");
+    window.open("https://github.com/ctrlcmdmaster/Foxonwows-Extensions");
     e.stopImmediatePropagation();
   });
-
+}
   /* Tag Bar */
   const tagBar = document.querySelector(`div[class="tagBar"]`);
   for (const tagName of allTags) {
